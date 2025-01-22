@@ -4,7 +4,7 @@
 
 ## How to Run the Project Locally
 
-Follow these steps to clone, set up, and run the application on your local machine:
+Follow these steps to clone, set up, and run the application on your local machine: 
 
 ---
 
