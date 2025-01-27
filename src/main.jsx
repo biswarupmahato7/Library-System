@@ -11,6 +11,8 @@ import Search from './components/Search.jsx'
 import AllBooks from './components/AllBooks.jsx'
 import AddBooks from './components/AddBooks.jsx'
 import BookDetails from './components/BookDetails.jsx'
+import { Provider } from 'react-redux'
+import { store } from './redux/store.js'
 
 const appRouter = createBrowserRouter([
   {
@@ -58,6 +60,9 @@ const appRouter = createBrowserRouter([
 ])
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-   <RouterProvider router={appRouter}/>
+    <Provider store={store}>
+
+      <RouterProvider router={appRouter}/>
+    </Provider>
   </StrictMode>,
 )
